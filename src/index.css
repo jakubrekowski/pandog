@@ -47,3 +47,22 @@ input[type="radio"].color-selector:checked+label {
 .button-quantity:disabled svg {
   fill: #8d8d8d
 }
+
+/* table */
+.table, .table table {
+  width: 100%;
+}
+
+.table th {
+  color: #646464;
+  border-bottom: 1px solid #646464;
+  font-weight: normal;
+}
+
+.table td {
+  padding: 1.5rem 0;
+}
+
+.table td img {
+  height: 120px;
+}

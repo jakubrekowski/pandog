@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Product from './components/Product';
+import Cart from './components/Cart';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/product" component={Product} />
+            <Route exact path="/cart" component={Cart} />
           </Switch>
         </div>
         <Footer />

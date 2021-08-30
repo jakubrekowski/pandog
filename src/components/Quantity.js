@@ -2,13 +2,19 @@ import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
 
 function Quantity(props) {
+  console.log(props);
   function increment() {
     const value = props.getValues()['quantity' + props.name]
-    props.setValue('quantity' + props.name, parseInt(value) + 1)
+    if (value >= 1) {
+      props.setValue('quantity' + props.name, parseInt(value) + 1)
+    } else {
+      props.setValue('quantity' + props.name, 1)
+    }
   }
 
   function decrement() {
     const value = props.getValues()['quantity' + props.name]
+    console.log(value)
     if (value > 1) {
       props.setValue('quantity' + props.name, parseInt(value) - 1)
     } else {
